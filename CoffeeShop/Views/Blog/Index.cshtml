@@ -5,29 +5,39 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Новости</h2>
+<div class="blog-container">
+    @if (Model.FeaturedNews != null)
+    {
+        <article class="blog-featured">
+            <div class="blog-featured-content">
+                <h3 class="blog-featured-title">@Model.FeaturedNews.Title</h3>
+                <p class="blog-featured-desc">@Model.FeaturedNews.Description</p>
+                <p class="blog-featured-date">@Model.FeaturedNews.CreatedAt.ToString("dd.MM.yyyy")</p>
+            </div>
+            <div class="blog-featured-image-wrapper">
+                <img src="@Model.FeaturedNews.ImageUrl" alt="@Model.FeaturedNews.Title" class="blog-img" />
+            </div>
+        </article>
+    }
 
-@if (Model.FeaturedNews != null)
-{
-    <article>
-        <h3>@Model.FeaturedNews.Title</h3>
-        <p>@Model.FeaturedNews.Description</p>
-        <img src="@Model.FeaturedNews.ImageUrl" alt="@Model.FeaturedNews.Title" />
-        <p>@Model.FeaturedNews.CreatedAt.ToString("dd.MM.yyyy")</p>
-    </article>
-}
-
-@if (Model.OtherNews.Any())
-{
-    <section>
-        @foreach (var news in Model.OtherNews)
-        {
-            <article>
-                <h3>@news.Title</h3>
-                <p>@news.Description</p>
-                <img src="@news.ImageUrl" alt="@news.Title" />
-                <p>@news.CreatedAt.ToString("dd.MM.yyyy")</p>
-            </article>
-        }
-    </section>
-}
+    @if (Model.OtherNews.Any())
+    {
+        <section class="blog-grid">
+            @foreach (var news in Model.OtherNews)
+            {
+                <article class="blog-card">
+                    <div class="blog-card-image-wrapper">
+                        <img src="@news.ImageUrl" alt="@news.Title" class="blog-img" />
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-card-header">
+                            <h3 class="blog-card-title">@news.Title</h3>
+                            <span class="blog-card-date">@news.CreatedAt.ToString("dd.MM.yyyy")</span>
+                        </div>
+                        <p class="blog-card-desc">@news.Description</p>
+                    </div>
+                </article>
+            }
+        </section>
+    }
+</div>

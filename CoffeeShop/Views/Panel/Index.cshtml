@@ -1,0 +1,135 @@
+﻿@model CoffeeShop.Models.ViewModels.AdminViewModel
+@{
+    ViewData["Title"] = "Админ-панель";
+}
+
+<div class="admin-wrapper">
+<div class="admin-tabs-container">
+    <form method="get" asp-action="Index" class="admin-tabs-form">
+        <label class="admin-tab-label">
+            <input type="radio" name="tab" value="content" checked="@(Model.ActiveTab == "content")"
+            onchange="this.form.submit();" class="admin-radio-hidden" />
+            <span class="admin-tab-text @(Model.ActiveTab == "content" ? "admin-tab-active" : "")">
+                Управление контентом
+                </span>
+        </label class="admin-tab-label">
+        <label>
+            <input type="radio" name="tab" value="products" checked="@(Model.ActiveTab == "products")"
+            class="admin-radio-hidden" onchange="this.form.submit();" />
+            <span class="admin-tab-text @(Model.ActiveTab == "products" ? "admin-tab-active" : "")">
+                Управление товарами
+                </span>
+        </label>
+        <label class="admin-tab-label">
+            <input type="radio" name="tab" value="stats" checked="@(Model.ActiveTab == "stats")"
+            class="admin-radio-hidden" onchange="this.form.submit();" />
+            <span class="admin-tab-text @(Model.ActiveTab == "stats" ? "admin-tab-active" : "")">
+                Статистика
+                </span>
+        </label>
+    </form>
+</div>
+
+@if (Model.ActiveTab == "content")
+{
+    <a asp-action="EditNews" class="admin-add-btn">Добавить новость</a>
+
+    var featured = Model.News.FirstOrDefault();
+    var others = Model.News.Skip(1).ToList();
+    if (featured != null)
+    {
+        <div class="admin-featured-news">
+                <div class="admin-featured-content">
+                    <div class="admin-news-header">
+                        <h3 class="admin-featured-title">@featured.Title</h3>
+                        <a asp-action="EditNews" asp-route-id="@featured.Id" class="admin-edit-btn">Ред.</a>
+                    </div>
+                    <p class="admin-featured-desc">@featured.Description</p>
+                    <p class="admin-featured-date">@featured.CreatedAt.ToString("dd.MM.yyyy")</p>
+                </div>
+                <div class="admin-featured-img-wrapper">
+                    <img src="@featured.ImageUrl" class="admin-img" alt="@featured.Title" />
+                </div>
+            </div>
+    }
+    <div class="admin-grid">
+            @foreach (var news in others)
+            {
+                <div class="admin-card">
+                    <div class="admin-card-img-wrapper">
+                        <img src="@news.ImageUrl" class="admin-img" alt="@news.Title" />
+                    </div>
+                    <div class="admin-card-body">
+                        <div class="admin-card-header">
+                            <h4 class="admin-card-title">@news.Title</h4>
+                            <span class="admin-card-date">@news.CreatedAt.ToString("dd.MM.yyyy")</span>
+                            <a asp-action="EditNews" asp-route-id="@news.Id" class="admin-edit-btn">Ред.</a>
+                        </div>
+                        <p class="admin-card-desc">@news.Description</p>
+                    </div>
+                </div>
+            }
+        </div>
+}
+else if (Model.ActiveTab == "products")
+    {
+        <a asp-action="EditProduct" class="admin-add-btn">Добавить товар</a>
+
+        <div class="admin-grid">
+            @foreach (var product in Model.Products)
+            {
+                <div class="admin-card">
+                    <div class="admin-card-img-wrapper admin-product-img-wrapper">
+                        <img src="@product.ImageUrl" class="admin-img" alt="@product.Name" />
+                    </div>
+                    <div class="admin-card-body">
+                        <div class="admin-card-header admin-product-header">
+                            <h4 class="admin-card-title">@product.Name</h4>
+                            <a asp-action="EditProduct" asp-route-id="@product.Id" class="admin-edit-btn">Ред.</a>
+                        </div>
+                        <p class="admin-card-desc">@product.Description</p>
+                        
+                        <div class="admin-product-footer">
+                            <span class="admin-product-price">@product.Price.ToString("N0")руб</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+else if (Model.ActiveTab == "stats" && Model.Stats != null)
+{
+    <div class="admin-stats-wrapper">
+                    <div class="admin-stats-grid">
+                <div class="admin-stats-item">
+                    <span class="admin-stats-label">Средний чек</span>
+                    <span class="admin-stats-value">@Model.Stats.AverageCheck.ToString("N2")</span>
+                </div>
+                <div class="admin-stats-item">
+                    <span class="admin-stats-label">Маржинальность</span>
+                    <span class="admin-stats-value">@Model.Stats.MarginPercent.ToString("N2")</span>
+                </div>
+                <div class="admin-stats-item">
+                    <span class="admin-stats-label">Чистая прибыль</span>
+                    <span class="admin-stats-value">@Model.Stats.NetProfit.ToString("N2")</span>
+                </div>
+                <div class="admin-stats-item">
+                    <span class="admin-stats-label">lifetime value</span>
+                    <span class="admin-stats-value">@Model.Stats.AverageCustomerValue.ToString("N2")</span>
+                </div>
+                <div class="admin-stats-item">
+                    <span class="admin-stats-label">return rate</span>
+                    <span class="admin-stats-value">@Model.Stats.ReturnPercentage.ToString("N2")%</span>
+                </div>
+                <div class="admin-stats-item">
+                    <span class="admin-stats-label">Самый популярный товар (А)</span>
+                    <span class="admin-stats-value">@Model.Stats.MostPopularProduct</span>
+                </div>
+                <div class="admin-stats-item">
+                    <span class="admin-stats-label">Самый непопулярный товар (С)</span>
+                    <span class="admin-stats-value">@Model.Stats.LeastPopularProduct</span>
+                </div>
+            </div>
+    </div>
+}
+</div>

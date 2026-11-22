@@ -29,8 +29,13 @@ body {
 
 main {
     display: flex;
-    justify-content: center; /* по горизонтали */
-    height: 100vh; /* высота контейнера */
+    justify-content: center; 
+    height: 100vh;
+}
+
+.material-symbols-outlined {
+    font-size: 108px;
+    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24
 }
 
 /* ШАПКА САЙТА - шапка сайта */
@@ -594,4 +599,620 @@ main {
     width: 100%;
     height: 110px;
     background-color: #a9a9a9;
+}
+
+/* Завершение оформления заказа */
+.confirm-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.confirm-card {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.confirm-icon {
+    font-size: 84px;
+    color: #222222;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.confirm-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.confirm-form {
+    margin: 0 0 12px 0;
+    padding: 0;
+    width: 100%;
+}
+
+.confirm-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #d1c2a7;
+    color: #222222;
+    font-size: 14px;
+    font-family: inherit;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+    .confirm-btn:hover {
+        background-color: #c4b598;
+        color: #222222;
+    }
+
+.confirm-btn-link {
+    margin-top: 0;
+}
+
+/* Блог */
+.blog-container {
+    background-color: #d3d3d3;
+    padding: 40px;
+    color: #000;
+}
+
+.blog-featured {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-featured-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-featured-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.blog-featured-desc {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+.blog-featured-date {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.blog-featured-image-wrapper {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: #d9d9d9; 
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-image-wrapper {
+    width: 100%;
+    height: 200px; 
+    background-color: #737373;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-card-body {
+    padding: 15px 20px 20px 20px;
+}
+
+.blog-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.blog-card-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.blog-card-date {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.blog-card-desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+/* Админ. панель */
+.admin-wrapper {
+    min-height: 100vh;
+    padding: 20px 40px;
+    color: #000;
+}
+
+.admin-tabs-container {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.admin-tabs-form {
+    display: flex;
+    gap: 5px;
+}
+
+.admin-tab-label {
+    cursor: pointer;
+    margin: 0;
+}
+
+.admin-radio-hidden {
+    display: none;
+}
+
+.admin-tab-text {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.admin-tab-active {
+    background-color: #b3b3b3; 
+    color: #000;
+}
+
+.admin-add-btn {
+    display: inline-block;
+    background-color: #9c8e7c; 
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    transition: background-color 0.2s;
+}
+
+    .admin-add-btn:hover {
+        background-color: #8a7d6d;
+        color: #fff;
+    }
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.admin-featured-news {
+    background-color: #ffffff;
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.admin-featured-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-news-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.admin-featured-title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.admin-featured-desc {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+}
+
+.admin-featured-date {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.admin-featured-img-wrapper {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #d9d9d9;
+}
+
+.admin-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.admin-card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-card-img-wrapper {
+    width: 100%;
+    height: 150px;
+    background-color: #d9d9d9; 
+}
+
+.admin-product-img-wrapper {
+    background-color: #d1c2a7; 
+    height: 140px;
+}
+
+.admin-card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.admin-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.admin-card-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.admin-card-date {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.admin-card-desc {
+    font-size: 12px;
+    margin: 0;
+    color: #555;
+}
+
+.admin-edit-btn {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.admin-product-header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.admin-product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 15px;
+}
+
+.admin-product-price {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.admin-product-add-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #d1c2a7;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.admin-stats-wrapper {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.admin-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+}
+
+.admin-stats-item {
+    background-color: #d9d9d9;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.admin-stats-label {
+    font-weight: 500;
+}
+
+.admin-stats-value {
+    font-weight: 500;
+    text-align: right;
+}
+
+/* Общая обертка страницы/карточки */
+.admin-edit-wrapper {
+    padding: 30px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-edit-form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.admin-edit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-edit-title-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #dcdcdc;
+    padding: 5px 15px;
+    flex: 1;
+    max-width: 350px;
+}
+
+.admin-edit-title-input {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    outline: none;
+}
+
+    .admin-edit-title-input::placeholder {
+        color: #555;
+    }
+
+.admin-edit-pencil {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.admin-edit-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-edit-delete-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.admin-edit-submit-btn {
+    background-color: #cdbb9c; 
+    color: #000;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+    .admin-edit-submit-btn:hover {
+        background-color: #bba887;
+    }
+
+.admin-edit-content {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-edit-image-col {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.admin-edit-image-label {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #dcdcdc;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.admin-edit-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.admin-edit-img-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: bold;
+    color: #777;
+    border: 2px dashed #aaa;
+    box-sizing: border-box;
+}
+
+.admin-edit-file-input {
+    display: none;
+}
+
+.admin-edit-details-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-edit-desc-group {
+    background-color: #dcdcdc;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.admin-edit-group-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.admin-edit-textarea {
+    flex: 1;
+    width: 100%;
+    background: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.admin-edit-bottom-row {
+    display: flex;
+    gap: 15px;
+}
+
+.admin-edit-price-group,
+.admin-edit-type-group {
+    flex: 1;
+    background-color: #dcdcdc;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.admin-edit-price-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.admin-edit-select {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    appearance: none;
+}
+
+.admin-edit-content {
+    min-height: 280px;
+}
+
+.admin-edit-details-col {
+    gap: 0;
+}
+
+.admin-edit-desc-group {
+    height: 100%;
+    box-sizing: border-box;
 }

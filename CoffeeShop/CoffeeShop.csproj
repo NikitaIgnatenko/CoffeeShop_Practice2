@@ -12,8 +12,4 @@
     <PackageReference Include="Supabase.Extensions.DependencyInjection" Version="8.12.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Panel\" />
-  </ItemGroup>
-
 </Project>

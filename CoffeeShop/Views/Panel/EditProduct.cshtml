@@ -1,0 +1,76 @@
+﻿@model CoffeeShop.Models.ViewModels.AdminProductEditViewModel
+@{
+    bool isEdit = Model.Id != 0;
+    ViewData["Title"] = isEdit ? "Редактировать товар" : "Добавить товар";
+}
+
+<div class="admin-edit-wrapper">
+    <form asp-action="EditProduct" method="post" enctype="multipart/form-data" class="admin-edit-form">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="ExistingImageUrl" />
+
+        <div class="admin-edit-header">
+            <div class="admin-edit-title-container">
+                <input asp-for="Name" class="admin-edit-title-input" placeholder="Название" required />
+            </div>
+
+            <div class="admin-edit-actions">
+                @if (isEdit)
+                {
+                    <button type="submit" asp-controller="Panel" asp-action="DeleteProduct"
+                            formmethod="post" class="admin-edit-delete-btn"
+                            onclick="return confirm('Удалить этот товар?');" title="Удалить">
+                        Удалить
+                    </button>
+                }
+                <button type="submit" class="admin-edit-submit-btn">
+                    @(isEdit ? "Изменить товар" : "Добавить товар")
+                </button>
+            </div>
+        </div>
+
+        <div class="admin-edit-content">
+            <div class="admin-edit-image-col">
+                <label for="NewImage" class="admin-edit-image-label">
+                    @if (!string.IsNullOrEmpty(Model.ExistingImageUrl))
+                    {
+                        <img src="@Model.ExistingImageUrl" class="admin-edit-img" alt="Изображение товара" />
+                    }
+                    else
+                    {
+                        <div class="admin-edit-img-placeholder">
+                            <span>+ Загрузить</span>
+                        </div>
+                    }
+                    <input asp-for="NewImage" type="file" accept="image/*" class="admin-edit-file-input" id="NewImage" />
+                </label>
+            </div>
+
+            <div class="admin-edit-details-col">
+                <div class="admin-edit-desc-group">
+                    <div class="admin-edit-group-header">
+                        <span>Описание</span>
+                    </div>
+                    <textarea asp-for="Description" class="admin-edit-textarea" required></textarea>
+                </div>
+
+                <div class="admin-edit-bottom-row">
+                    <div class="admin-edit-price-group">
+                        <span>Цена</span>
+                        <input asp-for="Price" type="number" step="0.01" min="0.01" class="admin-edit-price-input" required />
+                    </div>
+
+                    <div class="admin-edit-type-group">
+                        <span>Тип</span>
+                        <select asp-for="ProductTypeId" class="admin-edit-select" required>
+                            @foreach (var type in Model.ProductTypes)
+                            {
+                                <option value="@type.Id">@type.Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

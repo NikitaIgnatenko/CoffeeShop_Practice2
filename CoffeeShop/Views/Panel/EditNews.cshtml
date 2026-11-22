@@ -1,0 +1,51 @@
+﻿@model CoffeeShop.Models.ViewModels.AdminNewsEditViewModel
+@{
+    bool isEdit = Model.Id != 0;
+    ViewData["Title"] = isEdit ? "Редактировать новость" : "Добавить новость";
+}
+
+<div class="admin-edit-wrapper">
+    <form asp-action="EditNews" method="post" enctype="multipart/form-data" class="admin-edit-form">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="ExistingImageUrl" />
+
+        <div class="admin-edit-header">
+            <div class="admin-edit-title-container">
+                <input asp-for="Title" class="admin-edit-title-input" placeholder="Заголовок" required />
+            </div>
+
+            <div class="admin-edit-actions">
+                <button type="submit" class="admin-edit-submit-btn">
+                    @(isEdit ? "Изменить новость" : "Добавить новость")
+                </button>
+            </div>
+        </div>
+
+        <div class="admin-edit-content">
+            <div class="admin-edit-image-col">
+                <label for="NewImage" class="admin-edit-image-label">
+                    @if (!string.IsNullOrEmpty(Model.ExistingImageUrl))
+                    {
+                        <img src="@Model.ExistingImageUrl" class="admin-edit-img" alt="Изображение новости" />
+                    }
+                    else
+                    {
+                        <div class="admin-edit-img-placeholder">
+                            <span>+ Загрузить</span>
+                        </div>
+                    }
+                    <input asp-for="NewImage" type="file" accept="image/*" class="admin-edit-file-input" id="NewImage" />
+                </label>
+            </div>
+
+            <div class="admin-edit-details-col">
+                <div class="admin-edit-desc-group">
+                    <div class="admin-edit-group-header">
+                        <span>Описание</span>
+                    </div>
+                    <textarea asp-for="Description" class="admin-edit-textarea" required></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

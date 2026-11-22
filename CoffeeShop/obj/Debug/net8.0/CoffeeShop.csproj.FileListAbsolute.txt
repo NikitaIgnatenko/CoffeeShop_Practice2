@@ -147,3 +147,4 @@ C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\D
 C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.genruntimeconfig.cache
 C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\ref\CoffeeShop.dll
 F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\libman.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.sourcelink.json
