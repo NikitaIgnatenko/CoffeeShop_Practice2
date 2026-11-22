@@ -1,0 +1,76 @@
+﻿@model CoffeeShop.Models.ViewModels.CartViewModel
+
+@{
+    ViewData["Title"] = "Корзина";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="cart-content-wrapper">
+    <h2 class="cart-title">Товары</h2>
+    @if (Model.IsEmpty)
+    {
+        <p class="cart-message">Ваша корзина пуста.</p>
+        <a asp-controller="Catalog" asp-action="Index" class="cart-link">Перейти в каталог</a>
+        return;
+    }
+
+    <table class="cart-product-elements-table">
+        <tbody class="cart-product-elements">
+            @foreach (var item in Model.Items)
+            {
+                <tr class="cart-product-element">
+                    <td class="cart-product-name">
+                        <div class="cart-product-text">@item.Name</div>
+                    </td>
+
+                    <td>
+                        <div class="cart-product-other-elem">
+                            <form asp-controller="Cart" asp-action="UpdateQuantity"
+                                  method="post" class="cart-product-btns">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="productId" value="@item.ProductId" />
+
+                                <button type="submit" name="delta" value="-1" class="cart-product-button-text">−</button>
+                                <span class="cart-product-text">@item.Quantity</span>
+                                <button type="submit" name="delta" value="1" class="cart-product-button-text">+</button>
+                            </form>
+                        </div>
+                    </td>
+
+
+                    <td class="cart-product-other-elem">
+                        <div class="cart-product-other-elem">
+                            <div class="cart-product-text">@item.Subtotal.ToString("C")</div>
+                        </div>
+                        
+                    </td>
+                    <td class="cart-product-other-elem">
+                        <div class="cart-product-other-elem">
+                            <form asp-controller="Cart" asp-action="UpdateQuantity" method="post">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="productId" value="@item.ProductId" />
+
+                                <button type="submit" name="delta" value="-@item.Quantity" class="cart-product-button-text">Удалить</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="cart-footer-wrapper">
+        <form asp-action="Clear" method="post">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="cart-clear">Очистить корзину</button>
+        </form>
+
+        <div class="cart-total-price">
+            <span>@Model.Total.ToString("C")</span>
+        </div>
+
+        <div class="cart-checkout-link-box">
+            <a asp-controller="Checkout" asp-action="Index" class="cart-checkout-link">Оформить заказ</a>
+        </div>
+    </div>
+</div>

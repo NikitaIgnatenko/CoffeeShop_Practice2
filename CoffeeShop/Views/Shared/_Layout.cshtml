@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/reset.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="header-content-wrapper">
+            <a class="header-title" asp-controller="Catalog" asp-action="Index">МОЕКОФЕ</a>
+            <nav class="header-buttons">
+                <a class="header-navlink" asp-controller="Catalog" asp-action="Index">Каталог</a>
+                <a class="header-navlink" asp-controller="Blog" asp-action="Index">Блог</a>
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <a class="header-navlink" asp-controller="Cart" asp-action="Index">Корзина</a>
+                    <form class="header-form" asp-controller="Auth" asp-action="Logout" method="post">
+                        @Html.AntiForgeryToken()
+                        <button class="header-button" type="submit">Выйти</button>
+                    </form>
+                } 
+                else
+                {
+                    <a class="header-navlink" asp-controller="Auth" asp-action="Register">Регистрация</a>
+                    <a class="header-navlink" asp-controller="Auth" asp-action="Login">Войти</a>
+                }
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        @RenderBody()
+    </main>
+    <footer>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

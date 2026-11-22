@@ -1,0 +1,115 @@
+﻿@model CoffeeShop.Models.ViewModels.CatalogViewModel
+@{
+    ViewData["Title"] = "Каталог";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <aside class="producttypes-selector">
+        <form method="get" asp-action="Index">
+            <div class="catalog-producttypes-radiogroup">
+                <input type="radio" name="productTypeId" id="0" value=""
+                    checked="@(Model.SelectedProductTypeId == null)"
+                    onchange="this.form.submit();" />
+                <label for="0" class="catalog-producttype-radiobutton">
+                    Все
+                </label>
+
+                @foreach (var productType in Model.ProductTypes)
+                {
+                    <input type="radio" name="productTypeId" id="@productType.Id" value="@productType.Id"
+                        checked="@(Model.SelectedProductTypeId == productType.Id)"
+                        onchange="this.form.submit();" />
+                    <label for="@productType.Id" class="catalog-producttype-radiobutton">
+                        @productType.Name
+                    </label>
+                }
+            </div>
+
+            <input type="hidden" name="page" value="1" />
+        </form>
+    </aside>
+
+    <div>
+        @if (Model.Products.Count == 0)
+        {
+            <div>По выбранным критериям товаров не найдено.</div>
+        }
+        else
+        {
+            <div class="catalog">
+                @foreach (var p in Model.Products)
+                {
+                    <div class="product-content-wrapper">
+                        <div class="product-card">
+                            <div class="product-card-top">
+                                <img class="product-img" src="@p.ImageUrl" />
+                            </div>
+                            <div class="product-card-middle">
+                                <p class="product-name">@p.Name</p>
+                                <p class="product-desc">@p.Description</p>
+                            </div>
+                            <div class="product-card-bottom">
+                                <p class="product-price">@p.Price.ToString("N2") ₽</p>
+                                @if (Model.CartQuantities.TryGetValue(p.Id, out var quantity) && quantity > 0)
+                                {
+                                    <form asp-controller="Catalog" asp-action="UpdateQuantity"
+                                          method="post" class="product-quantity-border">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="productId" value="@p.Id" />
+                                        <input type="hidden" name="productTypeId" value="@Model.SelectedProductTypeId" />
+                                        <input type="hidden" name="page" value="@Model.CurrentPage" />
+
+                                        <button type="submit" name="delta" value="-1" class="product-quantity-text-change">−</button>
+                                        <span class="product-quantity-text">@quantity</span>
+                                        <button type="submit" name="delta" value="1" class="product-quantity-text-change">+</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <form asp-controller="Catalog" asp-action="AddToCart" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="productId" value="@p.Id" />
+                                        <input type="hidden" name="productTypeId" value="@Model.SelectedProductTypeId" />
+                                        <input type="hidden" name="page" value="@Model.CurrentPage" />
+                                        <div class="product-add">
+                                            <button type="submit" class="product-add">+</button>
+                                        </div>
+                                    </form>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            @if (Model.TotalPages > 1)
+            {
+                <nav>
+                    <ul>
+                        <li>
+                            <a
+                               asp-action="Index"
+                               asp-route-brandId="@Model.SelectedProductTypeId"
+                               asp-route-page="@(Model.CurrentPage - 1)">&larr;</a>
+                        </li>
+                        @for (int i = 1; i <= Model.TotalPages; i++)
+                        {
+                            <li>
+                                <a
+                                   asp-action="Index"
+                                   asp-route-brandId="@Model.SelectedProductTypeId"
+                                   asp-route-page="@i">@i</a>
+                            </li>
+                        }
+                        <li>
+                            <a
+                               asp-action="Index"
+                               asp-route-brandId="@Model.SelectedProductTypeId"
+                               asp-route-page="@(Model.CurrentPage + 1)">&rarr;</a>
+                        </li>
+                    </ul>
+                </nav>
+            }
+        }
+    </div>
+</div>

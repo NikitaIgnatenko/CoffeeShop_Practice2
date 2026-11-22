@@ -1,0 +1,30 @@
+﻿@model CoffeeShop.Models.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Вход";
+}
+<div class="auth-box">
+    <h2 class="auth-title">Авторизация</h2>
+        
+    <form asp-action="Login" method="post">
+        @Html.AntiForgeryToken()
+
+        <div asp-validation-summary="ModelOnly" class="auth-message"></div>
+
+        <div class ="auth-text-field">
+            <input asp-for="Phone" placeholder="Телефон (+8 (___) ___-__-__)" />
+        </div>
+
+        <div class="auth-text-field">
+            <input asp-for="Password" placeholder="Пароль" />
+        </div>
+
+        <button type="submit" class="auth-btn">Войти</button>
+
+        <p class="auth-box-footer">Нет аккаунта? <a asp-action="Register" class="auth-link">Зарегистрироваться</a></p>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

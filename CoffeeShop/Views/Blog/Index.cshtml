@@ -1,0 +1,33 @@
+﻿@model CoffeeShop.Models.ViewModels.BlogViewModel
+
+@{
+    ViewData["Title"] = "Блог";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Новости</h2>
+
+@if (Model.FeaturedNews != null)
+{
+    <article>
+        <h3>@Model.FeaturedNews.Title</h3>
+        <p>@Model.FeaturedNews.Description</p>
+        <img src="@Model.FeaturedNews.ImageUrl" alt="@Model.FeaturedNews.Title" />
+        <p>@Model.FeaturedNews.CreatedAt.ToString("dd.MM.yyyy")</p>
+    </article>
+}
+
+@if (Model.OtherNews.Any())
+{
+    <section>
+        @foreach (var news in Model.OtherNews)
+        {
+            <article>
+                <h3>@news.Title</h3>
+                <p>@news.Description</p>
+                <img src="@news.ImageUrl" alt="@news.Title" />
+                <p>@news.CreatedAt.ToString("dd.MM.yyyy")</p>
+            </article>
+        }
+    </section>
+}

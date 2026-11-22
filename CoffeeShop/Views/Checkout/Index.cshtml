@@ -1,0 +1,81 @@
+﻿@model CoffeeShop.Models.ViewModels.CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Оформление заказа";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="checkout-divide-zones">
+    @if (Model.Cart.IsEmpty)
+    {
+        <div class="checkout-empty-message">
+            <p>Ваша корзина пуста — оформлять нечего.</p>
+            <a asp-controller="Catalog" asp-action="Index" class="checkout-link">В каталог</a>
+        </div>
+        return;
+    }
+    <div class="checkout-divide-zone">
+        <div class="checkout-container">    
+            <h2 class="checkout-title">Оформление заказа</h2>
+            <form asp-action="Complete" method="post" class="checkout-form">
+                <div class="checkout-section">
+                    <div class="checkout-section-header">Данные</div>
+
+                    <div class="checkout-field">
+                        <span class="checkout-label">Имя</span>
+                        <span class="checkout-value">@Model.UserName</span>
+                    </div>
+
+                    <div class="checkout-field">
+                        <span class="checkout-label">Телефон</span>
+                        <span class="checkout-value">@Model.UserPhone</span>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <div class="checkout-field">
+                        <span class="checkout-label">Выбрать пункт выдачи</span>
+                        <select asp-for="SelectedBranchId" name="branchId" class="checkout-select">
+                            @foreach (var branch in Model.Branches)
+                            {
+                                <option value="@branch.Id">@branch.Address</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <table class="checkout-table">
+                        <tbody>
+                            @foreach (var item in Model.Cart.Items)
+                            {
+                                <tr class="checkout-table-row">
+                                    <td class="checkout-product-name">@item.Name</td>
+                                    <td class="checkout-quantity">@item.Quantity шт</td>
+                                    <td class="checkout-subtotal">@item.Subtotal.ToString("C")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <p class="checkout-total">Сумма заказа: @Model.Cart.Total.ToString("C")</p>
+                </div>
+
+                <button type="submit" class="checkout-submit">Завершить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="checkout-divide-zone">
+        <div class="checkout-coffee-sticker-content-wrapper">
+            <h3 class="checkout-coffee-sticker-title">Украсьте свой стакан <br>(1 стикер = 5 руб)</h3>
+            <div class="checkout-coffee-sticker-img">
+
+            </div>
+            <div class="checkout-coffee-sticker-selector">
+
+            </div>
+        </div>
+    </div>
+</div>

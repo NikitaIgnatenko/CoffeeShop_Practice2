@@ -1,0 +1,149 @@
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\appsettings.Development.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\appsettings.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.staticwebassets.runtime.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.staticwebassets.endpoints.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.exe
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.deps.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.runtimeconfig.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.pdb
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rpswa.dswa.cache.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.GeneratedMSBuildEditorConfig.editorconfig
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.AssemblyInfoInputs.cache
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.AssemblyInfo.cs
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.csproj.CoreCompileInputs.cache
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.MvcApplicationPartsAssemblyInfo.cache
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.RazorAssemblyInfo.cache
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.RazorAssemblyInfo.cs
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rjimswa.dswa.cache.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\scopedcss\bundle\CoffeeShop.styles.css
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\scopedcss\projectbundle\CoffeeShop.bundle.scp.css
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.build.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.build.json.cache
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.development.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\refint\CoffeeShop.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.pdb
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.genruntimeconfig.cache
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\ref\CoffeeShop.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\BirdMessenger.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\MimeMapping.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.BarCodes.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Charting.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Cryptography.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.License.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Quality.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Shared.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Snippets.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.System.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.WPFonts.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Core.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Extensions.DependencyInjection.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Functions.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Gotrue.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Postgrest.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Realtime.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Storage.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.Reactive.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Websocket.Client.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.csproj.AssemblyReference.cache
+F:\CsharpProjects\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.csproj.Up2Date
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\appsettings.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.staticwebassets.endpoints.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.staticwebassets.runtime.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.exe
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.deps.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.runtimeconfig.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\CoffeeShop.pdb
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\BirdMessenger.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\MimeMapping.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.BarCodes.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Charting.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Cryptography.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.License.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Quality.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Shared.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.Snippets.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.System.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.WPFonts.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\PdfSharp.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Core.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Extensions.DependencyInjection.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Functions.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Gotrue.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Postgrest.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Realtime.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Supabase.Storage.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.Reactive.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\Websocket.Client.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.csproj.AssemblyReference.cache
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.AssemblyInfoInputs.cache
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.AssemblyInfo.cs
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.csproj.CoreCompileInputs.cache
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.RazorAssemblyInfo.cache
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.RazorAssemblyInfo.cs
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\scopedcss\bundle\CoffeeShop.styles.css
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\scopedcss\projectbundle\CoffeeShop.bundle.scp.css
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.csproj.Up2Date
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\refint\CoffeeShop.dll
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.pdb
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\CoffeeShop.genruntimeconfig.cache
+C:\Users\user.COMP406-3.000\Documents\365\Practics 2\CoffeeShop\CoffeeShop\obj\Debug\net8.0\ref\CoffeeShop.dll
+F:\CsharpProjects\CoffeeShop\CoffeeShop\bin\Debug\net8.0\libman.json
